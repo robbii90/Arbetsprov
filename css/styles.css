@@ -1,0 +1,82 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+html,body,#wrapper{
+	height: 100%;
+}
+#wrapper.focused{
+	background: lightgrey;
+}
+
+#content{
+	max-width: 645px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	padding-top: 80px;
+}
+
+#searchApp{
+	/*margin: 0 auto;*/
+	text-align: center;
+	padding: 20px;
+	border: 1px solid black;
+	/*width: 645px;*/
+	margin-bottom: 50px;
+	border-radius: 6px;
+	margin-top: 0px;
+	background: white;
+}
+
+.autocomplete-suggestions{
+	overflow: hidden;
+  	max-height: 192px !important;
+  	font-size: 22px;
+  	margin-top: 15px;
+  	background: white;
+  	max-width: 645px !important;
+}
+.autocomplete-suggestions div{
+  	padding: 10px;
+  	border: 1px solid lightgrey;
+}
+.autocomplete-suggestion:hover{
+	background: #417cfe;
+	color: white;
+}
+#githubuser{
+	margin-bottom: 55px;
+	width: calc(100% - 15px);
+	height: 45px;
+	font-size: 22px;
+	padding-left: 10px;
+}
+.username-div{
+	font-size: 22px;
+	background: lightgrey;
+	border: 1px solid black;
+	border-radius: 6px;
+	padding: 15px;
+	margin-top: 10px;
+}
+.username-div span{
+	color: white;
+	margin-right: 10px;
+	background: grey;
+	border-radius: 50px;
+	padding: 2px 7px;
+}
+#wrapper.focused .username-div span{
+	background: lightgrey;
+}
+#wrapper.focused .username-div {
+	color: grey;
+	border-color: grey;
+}
+
+@media (max-width: 500px) {
+	.username-div{
+		font-size: 18px;
+	}
+}
+
