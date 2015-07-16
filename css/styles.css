@@ -30,15 +30,20 @@ html,body,#wrapper{
 
 .autocomplete-suggestions{
 	overflow: hidden;
-  	max-height: 192px !important;
+  	max-height: 173px !important;
   	font-size: 22px;
   	margin-top: 15px;
   	background: white;
   	max-width: 645px !important;
+  	line-height: 1;
+}
+.autocomplete-suggestions div:first-child{
+  	border: 1px solid lightgrey;
 }
 .autocomplete-suggestions div{
   	padding: 10px;
   	border: 1px solid lightgrey;
+  	border-top: none;
 }
 .autocomplete-suggestion:hover{
 	background: #417cfe;
@@ -77,6 +82,11 @@ html,body,#wrapper{
 @media (max-width: 500px) {
 	.username-div{
 		font-size: 18px;
+	}
+}
+@media (max-width: 400px) {
+	.username-div{
+		font-size: 14px;
 	}
 }
 
