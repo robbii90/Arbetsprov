@@ -1,6 +1,6 @@
 Arbetsprov
 
-* färdigt
+* Färdigt!
 
 Funktionalitet
 
@@ -10,5 +10,5 @@ Funktionalitet
 Instruktioner
 
 * Sök efter de 100 första använderna till github.
-* Därefter kan du välja använder, tryck enter eller klicka för att lägga till.
-* Användar namn kommer visas samt datum som de skapats.
+* Därefter kan du välja användare, tryck enter eller klicka för att lägga till.
+* Användarnamn kommer visas samt datum som de skapats.
