@@ -44,9 +44,6 @@ $(function(){
 	        	var newTime = date.concat(' '+hour);
 	        	// Add the username and date to content div.
 	        	$('#content').append( "<div class='username-div'><span>&#x2713;</span>"+username+ ' - ' +newTime+"</div>");
-	        	$("#githubuser").prop('disabled', true);
-	        	// Using settimeout for att reduce spamming for results.
-	        	setTimeout(function(){ $("#githubuser").prop('disabled', false); }, 400);
 		  	});
 	    }
 	});
@@ -57,6 +54,11 @@ $(function(){
 	// reverse the darker content when inputfield is not focused.
 	$('#githubuser').focusout(function(event) {
 	    $('#wrapper').removeClass('focused');
+	    // clear field because of autocomplete not able to pickup on current letter(s) on re-focus.
+	    $('#githubuser').val("");
+	    // Using settimeout for att reduce spamming for results.
+	    $("#githubuser").prop('disabled', true);
+	    setTimeout(function(){ $("#githubuser").prop('disabled', false); }, 400);
 	});
 
 });
