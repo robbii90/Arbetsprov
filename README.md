@@ -1,6 +1,7 @@
 Arbetsprov
 
 * Färdigt!
+* Använder mig utav (HTML, CSS och JS) samt jQuery och jQuery autocomplete.
 
 Funktionalitet
 
